@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrapper">
+  <header class="top"><h1><a href="#">What the Flexbox?</a></h1></header>
+  <nav class="flex-nav">
+    <a href="#" class="toggle-nav"><i class="fas fa-bars"></i> Menu</a>
+    <ul>
+      <li><a href="#">Item 1</a></li>
+      <li><a href="#">Item 2</a></li>
+      <li><a href="#">Item 3</a></li>
+      <li><a href="#">Item 4</a></li>
+      <li><a href="#">Item 5</a></li>
+      <li><a href="#">Item 6</a></li>
+      <li class="social"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+      <li class="social"><a href="#"><i class="fab fa-twitter"></i></a></li>
+      <li class="social"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+      <li class="social"><a href="#"><i class="fab fa-github"></i></a></li>
+    </ul>
+  </nav>
+  <section class="hero">
+    <img src="flowers.jpg">
+  </section>
+
+  <section class="details">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <p>Accusantium autem blanditiis dicta enim harum quibusdam quidem quo rerum sed unde</p>
+  </section>
+
+  <section class="signup">
+    <form action="">
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email Address">
+      <input type="submit" value="Sign me up!">
+    </form>
+  </section>
+
+  <footer>
+    <p> &copy; Mona B.</p>
+  </footer>
+</div>
+
+<script
+        src="http://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+<script>
+  $(function() {
+    $(".toggle-nav").click(() => {
+      $(".flex-nav ul").toggleClass('open');
+    });
+  })
+</script>
+</body>
+</html>
